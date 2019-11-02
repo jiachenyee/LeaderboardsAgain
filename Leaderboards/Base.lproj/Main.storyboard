@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sign up" translatesAutoresizingMaskIntoConstraints="NO" id="JSs-Fe-bhG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ouch sign up" translatesAutoresizingMaskIntoConstraints="NO" id="JSs-Fe-bhG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JSs-Fe-bhG" secondAttribute="height" multiplier="1368:912" id="iYI-YO-z8R"/>
@@ -80,7 +80,7 @@ Written by a really bored developer.</string>
         <scene sceneID="lQ7-1T-Cl3">
             <objects>
                 <tableViewController id="zTc-dm-qLa" customClass="HomeTableViewController" customModule="Leaderboards" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mgm-O3-TLF">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="mgm-O3-TLF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -94,14 +94,14 @@ Written by a really bored developer.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="379"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-Zt-fjJ">
-                                                    <rect key="frame" x="20" y="20" width="374" height="249.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ouch home" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-Zt-fjJ">
+                                                    <rect key="frame" x="20" y="7.5" width="374" height="249.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="h5G-Zt-fjJ" secondAttribute="height" multiplier="1368:912" id="Jll-kn-FRa"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey Jia Chen," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rN-6y-Ogz">
-                                                    <rect key="frame" x="20" y="289.5" width="374" height="40"/>
+                                                    <rect key="frame" x="20" y="277" width="374" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="q4s-0J-IpR"/>
                                                     </constraints>
@@ -110,7 +110,7 @@ Written by a really bored developer.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJv-Cx-jYr">
-                                                    <rect key="frame" x="20" y="335.5" width="374" height="23.5"/>
+                                                    <rect key="frame" x="20" y="323" width="374" height="36"/>
                                                     <string key="text">Create a room and invite others to view it! Motivate
 others to do work with the leaderboards.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -118,7 +118,7 @@ others to do work with the leaderboards.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJy-9m-ACw">
-                                                    <rect key="frame" x="372" y="298.5" width="22" height="22"/>
+                                                    <rect key="frame" x="372" y="286" width="22" height="22"/>
                                                     <color key="tintColor" name="Color Tint Secondary"/>
                                                     <state key="normal" image="plus" catalog="system">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
@@ -140,7 +140,6 @@ others to do work with the leaderboards.</string>
                                                 <constraint firstItem="JJy-9m-ACw" firstAttribute="centerY" secondItem="9rN-6y-Ogz" secondAttribute="centerY" id="anx-Do-nlB"/>
                                                 <constraint firstItem="TJv-Cx-jYr" firstAttribute="top" secondItem="9rN-6y-Ogz" secondAttribute="bottom" constant="6" id="gfv-bq-nQo"/>
                                                 <constraint firstItem="h5G-Zt-fjJ" firstAttribute="leading" secondItem="yb9-gl-JiA" secondAttribute="leading" constant="20" id="mrt-OB-tRM"/>
-                                                <constraint firstItem="h5G-Zt-fjJ" firstAttribute="top" secondItem="yb9-gl-JiA" secondAttribute="top" constant="20" id="vfG-bO-njt"/>
                                                 <constraint firstItem="9rN-6y-Ogz" firstAttribute="leading" secondItem="yb9-gl-JiA" secondAttribute="leading" constant="20" id="yPm-YR-5B8"/>
                                                 <constraint firstAttribute="trailing" secondItem="9rN-6y-Ogz" secondAttribute="trailing" constant="20" id="zlC-FZ-4Ox"/>
                                             </constraints>
@@ -158,6 +157,14 @@ others to do work with the leaderboards.</string>
                                         <rect key="frame" x="0.0" y="450.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A5z-zU-0WN" id="i2i-m5-n18">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MoP-AK-StP">
+                                        <rect key="frame" x="0.0" y="494" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MoP-AK-StP" id="prX-BH-ElM">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -209,10 +216,10 @@ others to do work with the leaderboards.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="home" width="1368" height="912"/>
+        <image name="ouch home" width="1368" height="912"/>
         <image name="ouch new room" width="1368" height="912"/>
+        <image name="ouch sign up" width="1368" height="912"/>
         <image name="plus" catalog="system" width="64" height="56"/>
-        <image name="sign up" width="1368" height="912"/>
         <namedColor name="Color Tint Primary ">
             <color red="0.41176470588235292" green="0.52941176470588236" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
