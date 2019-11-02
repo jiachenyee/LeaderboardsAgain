@@ -18,6 +18,10 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
     // Sign in with Apple Authentication
     @IBOutlet weak var authStackView: UIStackView!
     
+    var identifer: String?
+    var username: String?
+    var emailAddress: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -41,7 +45,7 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
     }
     
     func setUpBodyParagraphLabel() {
-        // NSAttributedString for bolding the word Board
+        // NSAttributedString for italics on the last line
         let defaultAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)]
         let italicsAttribute = [NSAttributedString.Key.font: UIFont.italicSystemFont(ofSize: 15)]
         
@@ -81,20 +85,11 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
             print(email)
             print(fullName?.givenName)
             
-        } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
-            // Sign in using an existing iCloud Keychain credential.
-            let username = passwordCredential.user
-            let password = passwordCredential.password
+            identifer = userIdentifier
+            username = fullName?.givenName
+            emailAddress = email
             
-            // For the purpose of this demo app, show the password credential as an alert.
-            DispatchQueue.main.async {
-                let message = "The app has received your selected credential from the keychain. \n\n Username: \(username)\n Password: \(password)"
-                let alertController = UIAlertController(title: "Keychain Credential Received",
-                                                        message: message,
-                                                        preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-                self.present(alertController, animated: true, completion: nil)
-            }
+            performSegue(withIdentifier: "sign in", sender: nil)
         }
     }
     
@@ -108,6 +103,13 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
         return self.view.window!
     }
 
-    
+    // Transfer username data over to next ViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationViewController = segue.destination as? HomeTableViewController {
+            destinationViewController.identifer = self.identifer
+            destinationViewController.username = self.username
+            destinationViewController.emailAddress = self.emailAddress
+        }
+    }
 }
 

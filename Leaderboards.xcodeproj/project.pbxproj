@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324B9FBC236DB64200899D24 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FBB236DB64200899D24 /* HomeTableViewController.swift */; };
 		32959E09236D8B7300230317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E08236D8B7300230317 /* AppDelegate.swift */; };
 		32959E0B236D8B7300230317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E0A236D8B7300230317 /* SceneDelegate.swift */; };
 		32959E0D236D8B7300230317 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E0C236D8B7300230317 /* SignUpViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324B9FBB236DB64200899D24 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		32959E05236D8B7300230317 /* Leaderboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leaderboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32959E08236D8B7300230317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32959E0A236D8B7300230317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				32959E0A236D8B7300230317 /* SceneDelegate.swift */,
 				32959E0C236D8B7300230317 /* SignUpViewController.swift */,
 				32959E0E236D8B7300230317 /* Main.storyboard */,
+				324B9FBB236DB64200899D24 /* HomeTableViewController.swift */,
 				32959E11236D8B7600230317 /* Assets.xcassets */,
 				32959E13236D8B7600230317 /* LaunchScreen.storyboard */,
 				32959E16236D8B7600230317 /* Info.plist */,
@@ -143,6 +146,7 @@
 				32959E0D236D8B7300230317 /* SignUpViewController.swift in Sources */,
 				32959E09236D8B7300230317 /* AppDelegate.swift in Sources */,
 				32959E0B236D8B7300230317 /* SceneDelegate.swift in Sources */,
+				324B9FBC236DB64200899D24 /* HomeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
