@@ -1,24 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="Leaderboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sign up" translatesAutoresizingMaskIntoConstraints="NO" id="JSs-Fe-bhG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JSs-Fe-bhG" secondAttribute="height" multiplier="1368:912" id="iYI-YO-z8R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Board" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrT-Jb-bCT">
+                                <rect key="frame" x="20" y="296" width="235" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="Color Tint Primary "/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKe-eB-8Y2">
+                                <rect key="frame" x="20" y="338" width="374" height="269"/>
+                                <mutableString key="text">Please fulfil the sole purpose of this screen and press that sign up button. Come on, just do it… it’s easier than it seems… I believe in you… Stop reading this and press that sign up button!
+
+I’m not exactly sure what the purpose of this entire body paragraph is for but whatever. So just press the sign up button. I know you see it. 
+
+Can’t believe you are actually read this. So here’s the important part. Go and give me a good review on the App Store. If you have negative sentiments with the app, still give it 5 stars. It doesn’t hurt to be kind.
+
+Written by a really bored developer.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="Color Tint Primary "/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cRf-TF-nd3">
+                                <rect key="frame" x="20" y="788.5" width="374" height="53.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cRf-TF-nd3" secondAttribute="height" multiplier="7:1" id="y0T-zq-Q1b"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cRf-TF-nd3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6IX-iR-xuK"/>
+                            <constraint firstItem="JSs-Fe-bhG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6li-Pe-hYN"/>
+                            <constraint firstItem="JSs-Fe-bhG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D4U-Zh-DLb"/>
+                            <constraint firstItem="UKe-eB-8Y2" firstAttribute="top" secondItem="LrT-Jb-bCT" secondAttribute="bottom" constant="6" id="GOz-Ae-dtV"/>
+                            <constraint firstItem="LrT-Jb-bCT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KaP-qc-igH"/>
+                            <constraint firstItem="UKe-eB-8Y2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Q7I-kL-wqo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UKe-eB-8Y2" secondAttribute="trailing" constant="20" id="ZCp-75-l8w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cRf-TF-nd3" secondAttribute="bottom" constant="20" id="eRj-z8-tcW"/>
+                            <constraint firstItem="LrT-Jb-bCT" firstAttribute="top" secondItem="JSs-Fe-bhG" secondAttribute="bottom" constant="20" id="fXy-XE-UcV"/>
+                            <constraint firstItem="JSs-Fe-bhG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qMG-nY-h6e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cRf-TF-nd3" secondAttribute="trailing" constant="20" id="wc4-e7-BKf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="authStackView" destination="cRf-TF-nd3" id="adc-dp-XBy"/>
+                        <outlet property="bodyParagraphLabel" destination="UKe-eB-8Y2" id="GcM-UV-zfC"/>
+                        <outlet property="welcomeLabel" destination="LrT-Jb-bCT" id="LXq-V8-c8J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sign up" width="1368" height="912"/>
+        <namedColor name="Color Tint Primary ">
+            <color red="0.41176470588235292" green="0.52941176470588236" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

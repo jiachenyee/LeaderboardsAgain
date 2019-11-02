@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		32959E09236D8B7300230317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E08236D8B7300230317 /* AppDelegate.swift */; };
 		32959E0B236D8B7300230317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E0A236D8B7300230317 /* SceneDelegate.swift */; };
-		32959E0D236D8B7300230317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E0C236D8B7300230317 /* ViewController.swift */; };
+		32959E0D236D8B7300230317 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E0C236D8B7300230317 /* SignUpViewController.swift */; };
 		32959E10236D8B7300230317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32959E0E236D8B7300230317 /* Main.storyboard */; };
 		32959E12236D8B7600230317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32959E11236D8B7600230317 /* Assets.xcassets */; };
 		32959E15236D8B7600230317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32959E13236D8B7600230317 /* LaunchScreen.storyboard */; };
@@ -19,11 +19,12 @@
 		32959E05236D8B7300230317 /* Leaderboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leaderboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32959E08236D8B7300230317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32959E0A236D8B7300230317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32959E0C236D8B7300230317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32959E0C236D8B7300230317 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		32959E0F236D8B7300230317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32959E11236D8B7600230317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32959E14236D8B7600230317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32959E16236D8B7600230317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32959E20236D982100230317 /* Leaderboards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Leaderboards.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +57,10 @@
 		32959E07236D8B7300230317 /* Leaderboards */ = {
 			isa = PBXGroup;
 			children = (
+				32959E20236D982100230317 /* Leaderboards.entitlements */,
 				32959E08236D8B7300230317 /* AppDelegate.swift */,
 				32959E0A236D8B7300230317 /* SceneDelegate.swift */,
-				32959E0C236D8B7300230317 /* ViewController.swift */,
+				32959E0C236D8B7300230317 /* SignUpViewController.swift */,
 				32959E0E236D8B7300230317 /* Main.storyboard */,
 				32959E11236D8B7600230317 /* Assets.xcassets */,
 				32959E13236D8B7600230317 /* LaunchScreen.storyboard */,
@@ -138,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32959E0D236D8B7300230317 /* ViewController.swift in Sources */,
+				32959E0D236D8B7300230317 /* SignUpViewController.swift in Sources */,
 				32959E09236D8B7300230317 /* AppDelegate.swift in Sources */,
 				32959E0B236D8B7300230317 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Leaderboards/Leaderboards.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = Leaderboards/Info.plist;
@@ -302,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Leaderboards/Leaderboards.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = Leaderboards/Info.plist;
