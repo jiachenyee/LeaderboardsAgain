@@ -8,23 +8,20 @@
 
 import UIKit
 
-class HomeTableViewController: UITableViewController {
+class HomeTableViewController: UITableViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     var identifer: String?
     var username: String?
     var emailAddress: String?
     
     @IBOutlet weak var userGreetingsLabel: UILabel!
-
+    @IBOutlet weak var signOutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+        setUpUserGreetingLabel()
+        setUpSignOutButton()
     }
     
     // MARK: - User interface
@@ -39,9 +36,18 @@ class HomeTableViewController: UITableViewController {
         
         userGreetingsLabel.attributedText = attributes
     }
+    
+    func setUpSignOutButton() {
+        signOutButton.layer.cornerRadius = 12
+        signOutButton.clipsToBounds = true
+    }
 
+    @IBAction func signOutButtonTapped(_ sender: Any) {
+        // Delete user's data from device
+        performSegue(withIdentifier: "sign out", sender: nil)
+    }
+    
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -52,6 +58,24 @@ class HomeTableViewController: UITableViewController {
         return 4
     }
 
+    // MARK: - CollectionView Datasource
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myroom", for: indexPath) as! MyRoomsCollectionViewCell
+        
+        cell.layer.cornerRadius = 12
+        cell.clipsToBounds = true
+        
+        return cell
+    }
+    
+    // MARK: - CollectionView Delegate
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "room", sender: nil)
+    }
     
     // MARK: - Navigation
 

@@ -56,6 +56,18 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
         bodyParagraphLabel.attributedText = attributes
     }
     
+    // MARK: Color Test Utility
+    var colorTest = 0
+    @IBAction func activateColorTest(_ sender: Any) {
+        colorTest += 1
+        
+        if colorTest == 10 {
+            colorTest = 0
+            performSegue(withIdentifier: "color", sender: nil)
+        }
+    }
+    
+    
     // MARK: Sign in with Apple
     func setUpSignInWithApple() {
         let authorizationButton = ASAuthorizationAppleIDButton()
@@ -90,6 +102,20 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
             emailAddress = email
             
             performSegue(withIdentifier: "sign in", sender: nil)
+        } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
+            // Sign in using an existing iCloud Keychain credential.
+            let username = passwordCredential.user
+            let password = passwordCredential.password
+            
+            // For the purpose of this demo app, show the password credential as an alert.
+            DispatchQueue.main.async {
+                let message = "The app has received your selected credential from the keychain. \n\n Username: \(username)\n Password: \(password)"
+                let alertController = UIAlertController(title: "Keychain Credential Received",
+                                                        message: message,
+                                                        preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            }
         }
     }
     
