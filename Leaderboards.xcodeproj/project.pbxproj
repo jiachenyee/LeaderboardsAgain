@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324AC476236ED4E70027D01F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 324AC475236ED4E70027D01F /* GoogleService-Info.plist */; };
 		324B9FBC236DB64200899D24 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FBB236DB64200899D24 /* HomeTableViewController.swift */; };
 		324B9FBE236DBB8900899D24 /* NewRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FBD236DBB8900899D24 /* NewRoomTableViewController.swift */; };
 		324B9FC0236DDCA000899D24 /* MyRoomsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FBF236DDCA000899D24 /* MyRoomsCollectionViewCell.swift */; };
@@ -14,16 +15,21 @@
 		324B9FC4236DE66300899D24 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FC3236DE66300899D24 /* RoomViewController.swift */; };
 		324B9FC6236DEA1200899D24 /* CollaborateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FC5236DEA1200899D24 /* CollaborateTableViewController.swift */; };
 		324B9FC8236E971600899D24 /* TeamLeaderboardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FC7236E971500899D24 /* TeamLeaderboardsTableViewCell.swift */; };
-		324B9FCA236EA8FB00899D24 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FC9236EA8FB00899D24 /* Room.swift */; };
+		324B9FCA236EA8FB00899D24 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FC9236EA8FB00899D24 /* Globals.swift */; };
+		324B9FCC236EB68A00899D24 /* JoinRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B9FCB236EB68A00899D24 /* JoinRoomTableViewController.swift */; };
 		32959E09236D8B7300230317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E08236D8B7300230317 /* AppDelegate.swift */; };
 		32959E0B236D8B7300230317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E0A236D8B7300230317 /* SceneDelegate.swift */; };
 		32959E0D236D8B7300230317 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32959E0C236D8B7300230317 /* SignUpViewController.swift */; };
 		32959E10236D8B7300230317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32959E0E236D8B7300230317 /* Main.storyboard */; };
 		32959E12236D8B7600230317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32959E11236D8B7600230317 /* Assets.xcassets */; };
 		32959E15236D8B7600230317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32959E13236D8B7600230317 /* LaunchScreen.storyboard */; };
+		8C4298A2D53BA53E890CECAF /* Pods_Leaderboards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225138457A7A5AEEC974CB7C /* Pods_Leaderboards.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2025000B86C57A70CC19E202 /* Pods-Leaderboards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaderboards.debug.xcconfig"; path = "Target Support Files/Pods-Leaderboards/Pods-Leaderboards.debug.xcconfig"; sourceTree = "<group>"; };
+		225138457A7A5AEEC974CB7C /* Pods_Leaderboards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leaderboards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		324AC475236ED4E70027D01F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		324B9FBB236DB64200899D24 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		324B9FBD236DBB8900899D24 /* NewRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomTableViewController.swift; sourceTree = "<group>"; };
 		324B9FBF236DDCA000899D24 /* MyRoomsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -31,7 +37,8 @@
 		324B9FC3236DE66300899D24 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		324B9FC5236DEA1200899D24 /* CollaborateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborateTableViewController.swift; sourceTree = "<group>"; };
 		324B9FC7236E971500899D24 /* TeamLeaderboardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamLeaderboardsTableViewCell.swift; sourceTree = "<group>"; };
-		324B9FC9236EA8FB00899D24 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		324B9FC9236EA8FB00899D24 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		324B9FCB236EB68A00899D24 /* JoinRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinRoomTableViewController.swift; sourceTree = "<group>"; };
 		32959E05236D8B7300230317 /* Leaderboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leaderboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32959E08236D8B7300230317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32959E0A236D8B7300230317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 		32959E14236D8B7600230317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32959E16236D8B7600230317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32959E20236D982100230317 /* Leaderboards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Leaderboards.entitlements; sourceTree = "<group>"; };
+		C7DF553A91111F2C7914F8BC /* Pods-Leaderboards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leaderboards.release.xcconfig"; path = "Target Support Files/Pods-Leaderboards/Pods-Leaderboards.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4298A2D53BA53E890CECAF /* Pods_Leaderboards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +68,8 @@
 			children = (
 				32959E07236D8B7300230317 /* Leaderboards */,
 				32959E06236D8B7300230317 /* Products */,
+				D38820AA2C1F7A5CF9345112 /* Pods */,
+				F62B5EB06894E4DAAC3AC4AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +90,11 @@
 				32959E0C236D8B7300230317 /* SignUpViewController.swift */,
 				324B9FBD236DBB8900899D24 /* NewRoomTableViewController.swift */,
 				32959E0E236D8B7300230317 /* Main.storyboard */,
+				324B9FCB236EB68A00899D24 /* JoinRoomTableViewController.swift */,
 				324B9FC7236E971500899D24 /* TeamLeaderboardsTableViewCell.swift */,
-				324B9FC9236EA8FB00899D24 /* Room.swift */,
+				324B9FC9236EA8FB00899D24 /* Globals.swift */,
 				324B9FC5236DEA1200899D24 /* CollaborateTableViewController.swift */,
+				324AC475236ED4E70027D01F /* GoogleService-Info.plist */,
 				324B9FC3236DE66300899D24 /* RoomViewController.swift */,
 				324B9FC1236DE63C00899D24 /* Extensions.swift */,
 				324B9FBF236DDCA000899D24 /* MyRoomsCollectionViewCell.swift */,
@@ -93,6 +106,23 @@
 			path = Leaderboards;
 			sourceTree = "<group>";
 		};
+		D38820AA2C1F7A5CF9345112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2025000B86C57A70CC19E202 /* Pods-Leaderboards.debug.xcconfig */,
+				C7DF553A91111F2C7914F8BC /* Pods-Leaderboards.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F62B5EB06894E4DAAC3AC4AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				225138457A7A5AEEC974CB7C /* Pods_Leaderboards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32959E19236D8B7600230317 /* Build configuration list for PBXNativeTarget "Leaderboards" */;
 			buildPhases = (
+				1052D05AD86EC8CA9EAFCD8A /* [CP] Check Pods Manifest.lock */,
 				32959E01236D8B7300230317 /* Sources */,
 				32959E02236D8B7300230317 /* Frameworks */,
 				32959E03236D8B7300230317 /* Resources */,
+				C50CA7E7C1583CEAEE0B1892 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324AC476236ED4E70027D01F /* GoogleService-Info.plist in Resources */,
 				32959E15236D8B7600230317 /* LaunchScreen.storyboard in Resources */,
 				32959E12236D8B7600230317 /* Assets.xcassets in Resources */,
 				32959E10236D8B7300230317 /* Main.storyboard in Resources */,
@@ -159,11 +192,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1052D05AD86EC8CA9EAFCD8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leaderboards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50CA7E7C1583CEAEE0B1892 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leaderboards/Pods-Leaderboards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leaderboards/Pods-Leaderboards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leaderboards/Pods-Leaderboards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32959E01236D8B7300230317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324B9FCC236EB68A00899D24 /* JoinRoomTableViewController.swift in Sources */,
 				32959E0D236D8B7300230317 /* SignUpViewController.swift in Sources */,
 				324B9FC0236DDCA000899D24 /* MyRoomsCollectionViewCell.swift in Sources */,
 				32959E09236D8B7300230317 /* AppDelegate.swift in Sources */,
@@ -174,7 +250,7 @@
 				324B9FC2236DE63C00899D24 /* Extensions.swift in Sources */,
 				324B9FC6236DEA1200899D24 /* CollaborateTableViewController.swift in Sources */,
 				324B9FC4236DE66300899D24 /* RoomViewController.swift in Sources */,
-				324B9FCA236EA8FB00899D24 /* Room.swift in Sources */,
+				324B9FCA236EA8FB00899D24 /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,18 +392,21 @@
 		};
 		32959E1A236D8B7600230317 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2025000B86C57A70CC19E202 /* Pods-Leaderboards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Leaderboards/Leaderboards.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = XL5JK4F896;
 				INFOPLIST_FILE = Leaderboards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sg.tk.Leaderboards;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.tk.boards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,18 +414,21 @@
 		};
 		32959E1B236D8B7600230317 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DF553A91111F2C7914F8BC /* Pods-Leaderboards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Leaderboards/Leaderboards.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = XL5JK4F896;
 				INFOPLIST_FILE = Leaderboards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sg.tk.Leaderboards;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.tk.boards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
