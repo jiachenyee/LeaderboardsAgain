@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AuthenticationServices
 
 class HomeTableViewController: UITableViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
@@ -44,7 +45,16 @@ class HomeTableViewController: UITableViewController, UICollectionViewDataSource
 
     @IBAction func signOutButtonTapped(_ sender: Any) {
         // Delete user's data from device
-        performSegue(withIdentifier: "sign out", sender: nil)
+        // Jump back to Sign In screen
+        DispatchQueue.main.async {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let viewController = storyboard.instantiateViewController(withIdentifier: "Sign Up") as? SignUpViewController
+                else { return }
+            viewController.modalPresentationStyle = .formSheet
+            viewController.isModalInPresentation = true
+            self.present(viewController, animated: true, completion: nil)
+        }
+
     }
     
     // MARK: - Table view data source

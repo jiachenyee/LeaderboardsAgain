@@ -13,7 +13,6 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
     
     // UI Elements
     @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var bodyParagraphLabel: UILabel!
     
     // Sign in with Apple Authentication
     @IBOutlet weak var authStackView: UIStackView!
@@ -28,7 +27,6 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
         
         // Set up User Interface
         setUpWelcomeLabel()
-        setUpBodyParagraphLabel()
         setUpSignInWithApple()
     }
     
@@ -42,18 +40,6 @@ class SignUpViewController: UIViewController, ASAuthorizationControllerDelegate,
         attributes.addAttributes(boldAttribute, range: NSRange(location: 10, length: 6))
         
         welcomeLabel.attributedText = attributes
-    }
-    
-    func setUpBodyParagraphLabel() {
-        // NSAttributedString for italics on the last line
-        let defaultAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)]
-        let italicsAttribute = [NSAttributedString.Key.font: UIFont.italicSystemFont(ofSize: 15)]
-        
-        let attributes = NSMutableAttributedString(string: bodyParagraphLabel.text ?? "", attributes: defaultAttributes)
-        
-        attributes.addAttributes(italicsAttribute, range: NSRange(location: 554, length: 36))
-        
-        bodyParagraphLabel.attributedText = attributes
     }
     
     // MARK: Color Test Utility
